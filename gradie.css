@@ -1,0 +1,115 @@
+body {
+    background: url('/Assets/Background.png') no-repeat fixed center center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+} 
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 400px;
+    width: 700px;
+
+    /* Centers container in middle of page */
+    position: absolute; /* This needs to be relative to be able to use overflow: hidden (try this with next project?) */
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-one {
+    background-color: #003141;
+    border-radius: 10px 0px 0px 10px;
+    line-height: 0.6;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container-one h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container-one p {
+    color: teal; 
+    text-align: center;
+}
+
+.container-one img {
+    max-width: 45%;
+    position:absolute;
+    top: 1.85%; /* This works but it's very manual and janky tbh */
+    left: 2%;
+}
+
+.container-two {
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.container-two h1 {
+    color: black;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.label-style-one {
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+.text-input {
+    color: rgb(179, 179, 179);
+    padding: 10px;
+    margin: 7px 7px 7px 40px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    width: 240px;
+}
+
+.check-container {
+    margin: 10px 0px 10px 40px;
+    display: flex;
+}
+
+.check-box {
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.label-style-two {
+    font-size: 17px;
+    margin-right: 60px; 
+}
+
+.bold-underline {
+    color: #02465c;
+    text-decoration: underline;
+    font-weight: bolder !important;
+}
+
+.submit-button {
+    background-color: #003141;
+    color: white;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold !important;
+    margin-top: 20px;
+}
+
+/* Tablet size */
+@media screen and (max-width: 767px){
+    
+}

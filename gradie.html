@@ -1,0 +1,45 @@
+<!-- great to practice centering layouts and absolute positioning, create using grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="gradie.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Link Roboto Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Create grid that's split into two parts -->
+        <div class="wrapper">
+            <div class="container-one">
+                <h1>Gradie</h1>
+                <p>Beautiful gradients in seconds.</p>
+                <img src='/Assets/iPhone Mockup.png'>
+            </div>
+            <div class="container-two">
+                <h1>Login</h1>
+                <form>
+                    <div>
+                        <label for="email" class="label-style-one">Email</label>
+                        <br/>
+                        <input type="text" class="text-input" id="email" name="email" value="john@example.com">
+                    </div>
+                    <div>
+                        <label for="password" class="label-style-one">Password</label>
+                        <br/>
+                        <input type="text" class="text-input" id="password" name="password" value="At least 8 characters">
+                    </div>
+                    <div class="check-container">
+                        <input type="checkbox" class="check-box" id="tnc" name="tnc">
+                        <label for="tnc" class="label-style-two">By creating an account, you agree to the <span class="bold-underline">Terms & Conditions</span>.</label>
+                    </div>
+                    <div>
+                        <input type="submit" class="submit-button" value="Create an Account">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
